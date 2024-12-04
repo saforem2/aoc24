@@ -1,6 +1,4 @@
 import numpy as np
-from pathlib import Path
-
 
 def is_safe(x):
     d = x[1:] - x[:-1]
