@@ -20,6 +20,7 @@ def dampen(x):
 
 
 def load_data(fp: str) -> dict[int, np.ndarray]:
+    from pathlib import Path
     data = {}
     with Path(fp).resolve().absolute().open("r") as f:
         for idx, line in enumerate(f):
